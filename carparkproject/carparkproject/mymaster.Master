@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mymaster.Master.cs" Inherits="carparkproject.mymaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-image:url(http://xdesktopwallpapers.com/wp-content/uploads/2011/01/2011-Chrysler-200-Convertible-In-parking.jpg)">
+    <form id="form1" runat="server">
+    <div style="height: 819px; width: 1206px">
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="87px" ImageUrl="~/carlogo.png" Width="97px" PostBackUrl="~/mainhome.aspx" />
+        
+        
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <asp:Button ID="Button1" runat="server"  PostBackUrl="~/loginpage.aspx" Text="LOGIN" />
+        &nbsp;&nbsp;
+        <asp:Button ID="Button2" runat="server" Text="VIEW SLOTS" PostBackUrl="~/viewslotspage.aspx" />
+        &nbsp;&nbsp;&nbsp;<asp:Button ID="Button3" runat="server" PostBackUrl="~/aboutus.aspx" Text="ABOUT US" />
+&nbsp;&nbsp;
+        <asp:Button ID="Button5" runat="server" Text="REGISTER" PostBackUrl="~/registerpage.aspx" />
+&nbsp;&nbsp;
+        <asp:Button ID="Button4" runat="server" PostBackUrl="~/contactuspage.aspx" Text="CONTACT US" />
+&nbsp;&nbsp;&nbsp;<asp:Button ID="Button6" runat="server" OnClick="Button6_Click" Text="LOGOUT" />
+&nbsp;&nbsp;
+        <asp:Button ID="Button9" runat="server" OnClick="Button9_Click" Text="REFRESH" />
+&nbsp;&nbsp;<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    </div>
+    </form>
+</body>
+</html>
